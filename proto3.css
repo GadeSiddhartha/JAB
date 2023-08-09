@@ -1,0 +1,90 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(215, 199, 175);
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: scroll;
+  }
+  
+  header {
+    display: flex;
+    width:100%;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    background-color: #b2901e;
+    color: #000000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+  }
+  
+  nav li {
+    margin-left: 40px;
+  }
+  nav a:hover {
+    background-color: #594a0a;
+    color: #fff;
+    padding: 10px;
+
+  }
+  nav a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .container{
+    overflow: hidden;
+    width: 100%;
+    height: 800px;
+    margin-left: 360px;
+    margin-top: 20px;
+  }
+  @-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+  }
+  .slide{
+    width: 200pxpx;
+    height: 800px;
+margin: 0 0 0 --2400px;
+position: relative;
+-webkit-animation-name: slide_animation;
+-webkit-animation-duration: 8s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction: alternate;
+-webkit-animation-play-state: running;
+  }
+  .image{
+    width:100%;
+    height: 800px;
+    position:relative;
+    float: left;
+  }
+  .image1{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    float: left;
+  }
